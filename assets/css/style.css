@@ -29,6 +29,7 @@ body{
 	margin: 1rem;
 	max-width: 300px;
 	max-height: 300px;
+	border-radius: 50%;
 }
 
 .containeraluno-text{
@@ -103,13 +104,13 @@ body{
 }
 
 
-@media(max-width: 360px){
+@media(max-width: 768px){
 	.header{
 		font-size: 0rem;
 	}
 }
 
-@media(min-width: 361px){
+@media(min-width: 769px){
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
