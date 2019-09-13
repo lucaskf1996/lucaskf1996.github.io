@@ -65,7 +65,7 @@ body{
 .pic, .pic1{
 	max-width: 100%;
 	margin: 0rem 0rem 0.5rem 0rem;
-	/*align-self: center;*/ 
+	/*align-self: center;*/
 }
 
 .titulo{
@@ -104,20 +104,28 @@ body{
 }
 
 
+<<<<<<< HEAD
 @media(max-width: 768px){
+=======
+@media(max-width: 414px){
+>>>>>>> 320e23c5a18d185d64591d88fd64d6982f2f4343
 	.header{
 		font-size: 0rem;
 	}
 }
 
+<<<<<<< HEAD
 @media(min-width: 769px){
+=======
+@media(min-width: 415px){
+>>>>>>> 320e23c5a18d185d64591d88fd64d6982f2f4343
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
 	}
 
 	.containeraluno{
-		margin-top: 5rem; 
+		margin-top: 5rem;
 		margin-left: 20%;
 		margin-right: 20%;
 		display: flex;
@@ -157,7 +165,7 @@ body{
 		width: 70%;
 		display: flex;
 		justify-content: space-around;
-		margin-top: 1rem; 
+		margin-top: 1rem;
 	}
 
 	.pic{
@@ -165,7 +173,7 @@ body{
 		margin: 3rem 0rem 0.5rem 0rem;
 		width: 25rem;
 		height: 25rem;
-	/*align-self: center;*/ 
+	/*align-self: center;*/
 	}
 
 	.projeto-centrado{
