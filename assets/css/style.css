@@ -29,7 +29,6 @@ body{
 	margin: 1rem;
 	max-width: 300px;
 	max-height: 300px;
-	border-radius: 50%;
 }
 
 .containeraluno-text{
@@ -112,29 +111,13 @@ body{
 }
 
 
-<<<<<<< HEAD
 @media(max-width: 34rem){
-=======
-<<<<<<< HEAD
-@media(max-width: 768px){
-=======
-@media(max-width: 414px){
->>>>>>> 320e23c5a18d185d64591d88fd64d6982f2f4343
->>>>>>> 449e8a01d8734563dfa19509c912ad9fa5360e3c
 	.header{
 		font-size: 0rem;
 	}
 }
 
-<<<<<<< HEAD
 @media(min-width: 34rem){
-=======
-<<<<<<< HEAD
-@media(min-width: 769px){
-=======
-@media(min-width: 415px){
->>>>>>> 320e23c5a18d185d64591d88fd64d6982f2f4343
->>>>>>> 449e8a01d8734563dfa19509c912ad9fa5360e3c
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
