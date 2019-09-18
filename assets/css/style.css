@@ -87,12 +87,20 @@ body{
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 5rem;
+	text-align: justify;
 }
 
 .projeto-centrado-items{
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
 	font-weight: bold;
+}
+
+.projeto-centrado-items-teste{
+	margin-bottom: 0.5rem;
+	align-self: center;
+	max-width: 60%;
+	text-align: justify;
 }
 
 .projeto-centrado-title{
@@ -103,13 +111,13 @@ body{
 }
 
 
-@media(max-width: 414px){
+@media(max-width: 34rem){
 	.header{
 		font-size: 0rem;
 	}
 }
 
-@media(min-width: 415px){
+@media(min-width: 34rem){
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
