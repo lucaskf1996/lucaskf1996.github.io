@@ -9,16 +9,24 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script src="assets/js/codes.js"></script>
-  	<script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </head>
 <body>
 	<header class="header">
 		<a href="index.html"><img class="logo" src = "assets/img/house.png" alt = "logo"></a>
 		<ul class="cabecalho">
-			<li class="fonte_cabecalho"><a href = "categoria.html"><font color="white">Categorias</a></li></font>
+			<div class = "dropdown">
+				<button onclick = "minhaFuncao()" class="dropbtn">Categorias</button>
+				<div id="meuDropdown" class="dropdown-content">
+					<a href="categoria.html?key=calculoemodelagem"> Cálc. Model. </a>
+					<a href="categoria.html?key=fablab"> FABLAB </a>
+					<a href="categoria.html?key=eletronico"> Eletrônica </a>
+					<a href="categoria.html?key=programacao"> Programação </a>
+				</div>
+			</div>
 			<li class="fonte_cabecalho"><a href = "index.html"><font color="white">Perfil</a></li></font>
 		</ul>
-		<img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil">
+		<a href="perfil.html?key=perfil"><img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil"></a>
 	</header>
 	<div class="containeraluno">
 		<div class = "containeraluno-text">
@@ -27,14 +35,16 @@
 				{{descricao}}
 			</p>
 		</div>
-		<img class="pic1" src="assets/img/python.jpeg" alt="programa python">
+		<div class = "pic1">
+			<img class="pic1" src="assets/img/{{imagem}}" alt="programa python">
+		</div>
 	</div>
 	<h2 class="titulo">Projetos</h2>
 	<ol class="projeto">
 		{{#each projetos}}
 			<li class="items">
 				<div class="size_img">
-					<img class="pic" src="https://picsum.photos/300/300" alt="{{this.titulo}}">
+					<img class="pic" src="{{this.img}}" alt="{{this.titulo}}">
 				</div>
 				<a href="projeto.html?key={{@key}}&category={{this.chave}}">{{this.titulo}}</a>
 			</li>

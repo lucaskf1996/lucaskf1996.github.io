@@ -5,6 +5,26 @@
   foi explicado no Material Prévio de JavaScript da Aula 9.
 */
 document.addEventListener('DOMContentLoaded', function() {
+
+  function minhaFuncao() {
+    document.getElementById("meuDropdown").classList.toggle("show");
+    console.log("funfo?")
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
   let params = coDesExtract()
   let value = params['key']
   /*
@@ -20,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     O segundo é uma função que deve ser chamada quando o
     dado terminar de ser baixado. Essa função recebe um
     parâmetro que é justamente o dado.
-  
+
     ATENÇÃO: NÃO CHAME ESSE MÉTODO MAIS QUE UMA VEZ. NÃO
     É NECESSÁRIO E PODE CAUSAR PROBLEMAS DE SINCRONIZAÇÃO.
   */
@@ -46,17 +66,24 @@ document.addEventListener('DOMContentLoaded', function() {
     estão entre {{ e }} nesse elemento e cujos valores são os
     textos que devem substituir essas ocorrências de {{}}.
   */
-    context = data['portfolio'][value]
-    coDesReplace('title',context)
+  context = data['portfolio'][value]
+  coDesReplace('title',context)
 
-    context = data['portfolio'][value]
-    coDesReplace('.container-aluno-text-name', context)
+  context = data['portfolio'][value]
+  coDesReplace('.container-aluno-text-name', context)
 
-    context = data['portfolio'][value]
-    console.log(value)
-    coDesReplace('.projeto', context)
+  context = data['portfolio'][value]
+  coDesReplace('.pic1', context)
 
-    context = data['portfolio'][value]
-    coDesReplace('.containeraluno-text-description',context)
+  context = data['portfolio'][value]
+  console.log(context)
+  coDesReplace('.projeto', context)
+
+  context = data['portfolio'][value]
+  coDesReplace('.containeraluno-text-description',context)
   })
+
+
+
+
 })

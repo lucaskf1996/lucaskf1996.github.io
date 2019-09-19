@@ -15,7 +15,14 @@ body{
 	width: 60px;
 	height: 60px;
 }
-
+.titulo-projeto{
+	height: 1rem;
+	margin: 2rem;
+	font-size: 2rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
 .containeraluno{
 	display: flex;
 	align-items: center;
@@ -110,14 +117,63 @@ body{
 	font-size: 2rem;
 }
 
-
-@media(max-width: 34rem){
-	.header{
-		font-size: 0rem;
-	}
+.dropbtn {
+	color: white;
+	background-color: #301014;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	border: none;
+	cursor: pointer;
+	margin-top: 0.5rem;
 }
 
-@media(min-width: 34rem){
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #51291e;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #61392e}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+@media(max-width: 579px){
+	.fonte_cabecalho{
+		font-size: 0rem;
+	}
+	/* .dropbtn{
+		display: none;
+		font-size: 0rem;
+	} */
+}
+
+@media(min-width: 580px){
 	.logo, .perfil{
 		width: 80px;
 		height: 80px;
@@ -148,7 +204,7 @@ body{
 		align-items: center;
 		margin-right: 2rem;
 		margin-left: 2rem;
-		margin-top: 0.3rem;
+		margin-top: 0.5rem;
 	}
 	.projeto{
 		display: grid;

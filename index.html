@@ -15,13 +15,21 @@
 	<header class="header">
 		<a href="index.html"><img class="logo" src = "assets/img/house.png" alt = "logo"></a>
 		<ul class="cabecalho">
-			<li class="fonte_cabecalho"><a href = "categoria.html"><font color="white">Categorias</a></li></font>
+			<div class = "dropdown">
+				<button onclick = "minhaFuncao()" class="dropbtn">Categorias</button>
+				<div id="meuDropdown" class="dropdown-content">
+					<a href="categoria.html?key=calculoemodelagem"> Cálc. Model. </a>
+					<a href="categoria.html?key=fablab"> FABLAB </a>
+					<a href="categoria.html?key=eletronico"> Eletrônica </a>
+					<a href="categoria.html?key=programacao"> Programação </a>
+				</div>
+			</div>
 			<li class="fonte_cabecalho"><a href = "index.html"><font color="white">Perfil</a></li></font>
 		</ul>
-		<img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil">
+		<a href="perfil.html?key=perfil"><img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil"></a>
 	</header>
 	<div class = "containeraluno">
-		<img class = "containeraluno-img" src="https://picsum.photos/300/300" alt="imagem de Vitor Macul">
+		<img class = "containeraluno-img" src="{{this.imagem}}" alt="imagem de Vitor Macul">
 		<div class = "containeraluno-text">
 			<h1 class = "container-aluno-text-name">
 				Vitor Fukada Hallage de Oliveira
@@ -39,7 +47,7 @@
 	<ol class="projeto">
 		{{#each portfolio}}
 			<li class="items">
-				<img class="pic" src="https://picsum.photos/300/300" alt={{@key}}>
+				<img class="pic" src="assets/img/{{this.imagem}}" alt={{@key}}>
 				<p><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></p>
 			</li>
 		{{/each}}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Perfil</title>
+	<link href = "assets/css/reset.css" rel = "stylesheet">
+	<link href = "assets/css/style.css" rel = "stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="assets/js/codes.js"></script>
+  <script src="assets/js/perfil.js"></script>
+</head>
+<body>
+	<header class="header">
+		<a href = "index.html"><img class="logo" src = "assets/img/house.png" alt = "logo"></a>
+		<ul class="cabecalho">
+			<div class = "dropdown">
+				<button onclick = "minhaFuncao()" class="dropbtn">Categorias</button>
+				<div id="meuDropdown" class="dropdown-content">
+					<a href="categoria.html?key=calculoemodelagem"> Cálc. Model. </a>
+					<a href="categoria.html?key=fablab"> FABLAB </a>
+					<a href="categoria.html?key=eletronico"> Eletrônica </a>
+					<a href="categoria.html?key=programacao"> Programação </a>
+				</div>
+			</div>
+			<li class="fonte_cabecalho"><a href = "index.html"><font color="white">Perfil</a></li></font>
+		</ul>
+		<a  href="perfil.html?key=perfil"><img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil"></a>
+	</header>
+	<div class = "projeto-centrado">
+		<h1 class="projeto-centrado-title">{{this.nome}}</h1>
+
+		<img class="containeraluno-img" src={{this.img}} alt="Screenshot do jogo">
+
+		<h2 class="projeto-centrado-items">Descrição</h2>
+		<p class="projeto-centrado-items-teste">
+			{{this.descricao}}
+		</p>
+
+	</div>
+</body>
+</html>
