@@ -15,22 +15,30 @@
 	<header class="header">
 		<a href = "index.html"><img class="logo" src = "assets/img/house.png" alt = "logo"></a>
 		<ul class="cabecalho">
-			<li class="fonte_cabecalho"><a href = "categoria.html"><font color="white">Categorias</a></li></font>
+			<div class = "dropdown">
+				<button onclick = "minhaFuncao()" class="dropbtn">Categorias</button>
+				<div id="meuDropdown" class="dropdown-content">
+					<a href="categoria.html?key=calculoemodelagem"> Cálc. Model. </a>
+					<a href="categoria.html?key=fablab"> FABLAB </a>
+					<a href="categoria.html?key=eletronico"> Eletrônica </a>
+					<a href="categoria.html?key=programacao"> Programação </a>
+				</div>
+			</div>
 			<li class="fonte_cabecalho"><a href = "index.html"><font color="white">Perfil</a></li></font>
 		</ul>
-		<img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil">
+		<a href="perfil.html?key=perfil"><img class ="perfil" src = "assets/img/perfil.png" alt = "foto de perfil"></a>
 	</header>
 	<div class = "projeto-centrado">
-		<h1 class="projeto-centrado-title">{{this.titulo}}</h1>
+		<h1 class="titulo-projeto">{{this.titulo}}</h1>
 
-		<img class="containeraluno-img" src={{this.img}} alt="Screenshot do jogo">
+		<img class="containeraluno-img" src="{{this.img}}" alt="Screenshot do jogo">
 
-		<h2 class="projeto-centrado-items">Descrição</h2>
+		<h2 class="titulo-projeto">Descrição</h2>
 		<p class="projeto-centrado-items-teste">
 			{{this.descricao}}
 		</p>
 
-		<h2 class="projeto-centrado-items">Integrantes</h2>
+		<h2 class="titulo-projeto">Integrantes</h2>
 		<p class="projeto-centrado-items-teste">
 			{{this.equipe}}
 		</p>
