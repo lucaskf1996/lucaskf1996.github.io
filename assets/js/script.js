@@ -67,20 +67,20 @@ document.addEventListener('DOMContentLoaded', function() {
     textos que devem substituir essas ocorrências de {{}}.
   */
   context = data['portfolio'][value]
-  coDesReplace('title',context)
-
-  context = data['portfolio'][value]
-  coDesReplace('.container-aluno-text-name', context)
-
-  context = data['portfolio'][value]
-  coDesReplace('.pic1', context)
-
-  context = data['portfolio'][value]
-  console.log(context)
-  coDesReplace('.projeto', context)
-
-  context = data['portfolio'][value]
-  coDesReplace('.containeraluno-text-description',context)
+  coDesReplace('body',context)
+  //
+  // context = data['portfolio'][value]
+  // coDesReplace('.container-aluno-text-name', context)
+  //
+  // context = data['portfolio'][value]
+  // coDesReplace('.pic1', context)
+  //
+  // context = data['portfolio'][value]
+  // console.log(context)
+  // coDesReplace('.projeto', context)
+  //
+  // context = data['portfolio'][value]
+  // coDesReplace('.containeraluno-text-description',context)
   })
 
 

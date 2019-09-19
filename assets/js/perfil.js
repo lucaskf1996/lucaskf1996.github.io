@@ -39,11 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
     É NECESSÁRIO E PODE CAUSAR PROBLEMAS DE SINCRONIZAÇÃO.
   */
   db.download('/', function(data) {
-    context = data[value]
+    context = data["perfil"]
     console.log(context)
-    coDesReplace('p', context)
-    coDesReplace('h1', context)
-    coDesReplace('img', context)
+    coDesReplace('body', context)
  })
 
 
